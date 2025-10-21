@@ -29,5 +29,10 @@ jobs:
     - name: Run tests
       run: |
         pytest tests/ -v --cov=main --cov-report=term-missing
+
+
+    - name: Build docker image
+      run: |
+        docker build -t flask-lab-project:latest .
     
 

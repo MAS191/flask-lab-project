@@ -5,7 +5,7 @@ setup(
     version='1.0.0',
     packages=find_packages(),
     install_requires=[
-        'Flask==2.3.4',
+        'Flask==2.3.3',
     ],
     extras_require={
         'test': [

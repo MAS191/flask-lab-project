@@ -1,1 +1,52 @@
-test
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Flask Lab</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  </head>
+  <body>
+    <h1>Welcome to Flask Lab</h1>
+    <p>This is a minimal Flask app served from the <code>main</code> package.</p>
+    <p>Open <a href="/">home</a> — static CSS is loaded from <code>main/static/style.css</code>.</p>
+  </body>
+</html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Flask Lab Project - Frontend</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #0f172a;
+      color: #e2e8f0;
+      text-align: center;
+      padding: 50px;
+    }
+    h1 {
+      color: #38bdf8;
+    }
+    a {
+      color: #22c55e;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    code {
+      background-color: #1e293b;
+      padding: 2px 6px;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Welcome to Flask Lab Project</h1>
+  <p>This is the <strong>frontend branch</strong> contribution.</p>
+  <p>Health check route: <a href="/health">/health</a></p>
+  <p>POST JSON data to <code>/data</code> (will be implemented later).</p>
+</body>
+</html>

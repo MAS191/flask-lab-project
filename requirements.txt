@@ -1,3 +1,4 @@
-Flask
-pytest
-pytest-cov
+Flask==2.3.4
+pytest==7.4.3
+pytest-cov==4.1.0
+setuptools>=65.0.0
